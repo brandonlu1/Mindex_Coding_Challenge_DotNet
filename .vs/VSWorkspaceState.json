@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\code-challenge",
+    "\\code-challenge.Tests",
+    "\\code-challenge.Tests\\obj",
+    "\\code-challenge.Tests\\obj\\Release",
+    "\\code-challenge.Tests\\resources",
+    "\\code-challenge\\bin",
+    "\\code-challenge\\Controllers",
+    "\\code-challenge\\Repositories",
+    "\\code-challenge\\resources",
+    "\\code-challenge\\Services"
+  ],
+  "SelectedNode": "\\code-challenge.sln",
+  "PreviewInSolutionExplorer": false
+}
