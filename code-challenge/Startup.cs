@@ -39,11 +39,14 @@ namespace code_challenge
             services.AddTransient<EmployeeDataSeeder>();
             services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddScoped<IReportingStructureService, ReportingStructureService>();
+
+            services.AddScoped<ICompensationRepository, CompensationRepository>();
+            services.AddTransient<CompensationDataSeeder>();
             services.AddScoped<ICompensationService, CompensationService>();
+
             services.AddScoped<CompensationContext, CompensationContext>();
             services.AddSingleton<CompensationContext, CompensationContext>();
             services.AddTransient<CompensationContext, CompensationContext>();
-            services.AddScoped<ICompensationRepository, CompensationRepository>();
             services.AddScoped<CompensationRepository, CompensationRepository>();
             services.AddSingleton<CompensationRepository, CompensationRepository>();
             services.AddTransient<CompensationRepository, CompensationRepository>();
@@ -52,12 +55,13 @@ namespace code_challenge
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, EmployeeDataSeeder seeder)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, EmployeeDataSeeder seeder, CompensationDataSeeder seeder1)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 seeder.Seed().Wait();
+                seeder1.Seed().Wait();
             }
             app.UseMvc();
         }

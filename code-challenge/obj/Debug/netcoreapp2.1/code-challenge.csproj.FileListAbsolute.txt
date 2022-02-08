@@ -14,3 +14,4 @@ C:\Users\brand\Documents\coding-challenge\code-challenge\obj\Debug\netcoreapp2.1
 C:\Users\brand\Documents\coding-challenge\code-challenge\obj\Debug\netcoreapp2.1\code-challenge.dll
 C:\Users\brand\Documents\coding-challenge\code-challenge\obj\Debug\netcoreapp2.1\code-challenge.pdb
 C:\Users\brand\Documents\coding-challenge\code-challenge\obj\Debug\netcoreapp2.1\code-challenge.genruntimeconfig.cache
+C:\Users\brand\Documents\coding-challenge\code-challenge\obj\Debug\netcoreapp2.1\code-challenge.csproj.AssemblyReference.cache

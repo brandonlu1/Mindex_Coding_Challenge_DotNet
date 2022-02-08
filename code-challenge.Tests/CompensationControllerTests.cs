@@ -84,6 +84,8 @@ namespace code_challenge.Tests.Integration
         {
             // Arrange
             var employeeId = "16a596ae-edd3-4847-99fe-c4518e82c86f";
+            var expectedFirstName = "John";
+            var expectedLastName = "Lennon";
             var expectedSalary = "20";
             var expectedEffectiveDate = "2/1/2022";
 
@@ -99,6 +101,8 @@ namespace code_challenge.Tests.Integration
             var compensation = response.DeserializeContent<Compensation>();
 
             Assert.AreEqual(employeeId, compensation.EmployeeId);
+            Assert.AreEqual(expectedFirstName, compensation.employee.FirstName);
+            Assert.AreEqual(expectedLastName, compensation.employee.LastName);
             Assert.AreEqual(expectedSalary, compensation.salary);
             Assert.AreEqual(expectedEffectiveDate, compensation.effectiveDate);
         }
