@@ -44,12 +44,6 @@ namespace code_challenge
             services.AddTransient<CompensationDataSeeder>();
             services.AddScoped<ICompensationService, CompensationService>();
 
-            services.AddScoped<CompensationContext, CompensationContext>();
-            services.AddSingleton<CompensationContext, CompensationContext>();
-            services.AddTransient<CompensationContext, CompensationContext>();
-            services.AddScoped<CompensationRepository, CompensationRepository>();
-            services.AddSingleton<CompensationRepository, CompensationRepository>();
-            services.AddTransient<CompensationRepository, CompensationRepository>();
             services.AddMvc();
 
         }
